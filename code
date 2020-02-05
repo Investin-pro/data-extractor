@@ -48,6 +48,6 @@ def get_all_bitmex(symbol, kline_size, save = False):
             temp_df = pd.DataFrame(data)
             data_df = data_df.append(temp_df)
     data_df.set_index('timestamp', inplace=True)
-    if save and rounds > 0: data_df.to_csv("/Users/anasabdulkhader/Desktop/11.csv")
+    if save and rounds > 0: data_df.to_csv("/Users/.csv")# set your file name
     print('All caught up..!')
     return data_df

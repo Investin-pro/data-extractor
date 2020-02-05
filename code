@@ -51,3 +51,7 @@ def get_all_bitmex(symbol, kline_size, save = False):
     if save and rounds > 0: data_df.to_csv("/Users/.csv")# set your file name
     print('All caught up..!')
     return data_df
+    
+    
+    #after running the above code to get the file run
+    data=get_all_bitmex("XBTUSD","1h",save=True)
